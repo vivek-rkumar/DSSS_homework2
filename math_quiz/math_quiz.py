@@ -1,7 +1,7 @@
 import random
 
 
-def generating_random_integer(min, max):
+def generating_random_integer(minimum, maximum):
     """
     Random integer.
     """
