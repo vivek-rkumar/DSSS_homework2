@@ -1,5 +1,5 @@
 import unittest
-from math_quiz import function_A, function_B, function_C
+from math_quiz import generating_random_integer, generating_random_operation, generating_question_and_answer
 
 
 class TestMathGame(unittest.TestCase):
@@ -9,7 +9,7 @@ class TestMathGame(unittest.TestCase):
         min_val = 1
         max_val = 10
         for _ in range(1000):  # Test a large number of random values
-            rand_num = function_A(min_val, max_val)
+            rand_num = generating_random_integer(min_val, max_val)
             self.assertTrue(min_val <= rand_num <= max_val)
 
     def test_function_B(self):
