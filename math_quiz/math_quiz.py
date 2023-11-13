@@ -1,22 +1,31 @@
-"""
-Here is a script for a math quiz. The code puts up simple math questions. The use can answer them, and it will give a
-score based on the correct answer given. 
-"""
 import random
-
-
 def generating_random_integer(minimum, maximum):
     """
-    Random integer.
+    Generate a random integer between the specified minimum and maximum values.
+    Parameters:
+    - minimum (int): The minimum value for the random integer.
+    - maximum (int): The maximum value for the random integer.
+    Returns:
+    - int: A random integer between minimum and maximum (inclusive).
     """
     return random.randint(minimum, maximum)
-
-
 def generating_random_operation():
+    """
+    Select a random arithmetic operation from the set {+, -, *}.
+    Returns:
+    - str: A randomly chosen arithmetic operation.
+    """
     return random.choice(['+', '-', '*'])
-
-
 def generating_question_and_answer(number1, number2, operation):
+    """
+    Generate a math question and calculate the correct answer.
+    Parameters:
+    - number1 (int): The first operand of the arithmetic operation.
+    - number2 (int): The second operand of the arithmetic operation.
+    - operation (str): The arithmetic operation {+, -, *}.
+    Returns:
+    - tuple: A tuple containing the generated question (string) and the correct answer (int).
+    """
     question = f"{number1} {operation} {number2}"
     if operation == '+':
         answer = number1 + number2
@@ -28,6 +37,10 @@ def generating_question_and_answer(number1, number2, operation):
 
 
 def math_quiz():
+    """
+    Run a simple math quiz game.
+    The user is presented with math problems and must provide correct answers to earn points.
+    """
     your_score = 0
     total_questions = 3
 
