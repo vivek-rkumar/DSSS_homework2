@@ -4,7 +4,7 @@ with open('.\\requirements.txt') as f:
     requirements = f.read().splitlines()
 
 setup(
-    name='paavana_dsss_hw2',
+    name='DSSS_Homework62',
     version='1.0.0',
     packages=find_packages(),
     install_requires=requirements,
