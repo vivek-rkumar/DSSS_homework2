@@ -4,7 +4,7 @@ with open('.\\requirements.txt') as f:
     requirements = f.read().splitlines()
 
 setup(
-    name='DSSS_Homework62',
+    name='DSSS_Homework2',
     version='1.0.0',
     packages=find_packages(),
     install_requires=requirements,
